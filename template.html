@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: 'Calibri', 'Arial', sans-serif;
+      line-height: 1.4;
+      color: #1a1a1a;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+    a { color: #000; text-decoration: none; }
+
+    .header { border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 15px; }
+    .name { font-size: 32px; font-weight: 800; text-transform: uppercase; margin: 0; }
+    .contact-info { font-size: 12px; margin-top: 5px; }
+    .links { margin-top: 5px; font-size: 12px; font-weight: bold; }
+    .links a { margin-right: 10px; text-decoration: underline; }
+
+    .section-title {
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      border-bottom: 1px solid #ccc;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      padding-bottom: 2px;
+    }
+
+    .skills-grid { display: grid; grid-template-columns: 140px 1fr; gap: 5px; font-size: 12px; }
+    .skill-category { font-weight: bold; }
+
+    .job-header { display: flex; justify-content: space-between; align-items: baseline; margin-top: 12px; }
+    .job-title { font-weight: bold; font-size: 14px; }
+    .tech-stack { font-size: 11px; color: #444; margin-bottom: 4px; }
+
+    ul { margin: 5px 0; padding-left: 20px; }
+    li { font-size: 12px; margin-bottom: 2px; }
+
+    .summary { font-size: 12px; text-align: justify; }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1 class="name">{{basics.name}}</h1>
+    <div class="contact-info">
+      {{basics.location.city}}, {{basics.location.region}} | {{basics.phone}} | {{basics.email}}
+    </div>
+    <div class="links">
+      <a href="{{basics.url}}">Portfolio</a>
+      {{#each basics.profiles}}
+        <a href="{{url}}">{{network}}</a>
+      {{/each}}
+    </div>
+  </div>
+
+  <div class="section-title">Professional Summary</div>
+  <div class="summary">{{summary}}</div>
+
+  <div class="section-title">Technical Skills</div>
+  <div>
+    {{#each skills}}
+    <div class="skills-grid">
+      <div class="skill-category">{{name}}:</div>
+      <div>{{join keywords ", "}}</div>
+    </div>
+    {{/each}}
+  </div>
+
+  <div class="section-title">Key Projects</div>
+  {{#each projects}}
+  <div>
+    <div class="job-header">
+      <span class="job-title">{{name}}</span>
+      <span>
+        <a href="{{url}}">[Live Demo]</a>
+      </span>
+    </div>
+
+    <div class="tech-stack">
+      Stack: {{join tech_stack " | "}}
+    </div>
+
+    <ul>
+      {{#each highlights}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  </div>
+  {{/each}}
+
+  <div class="section-title">Education</div>
+  {{#each education}}
+  <div>
+    <div class="job-header">
+      <span class="job-title">{{area}} ({{studyType}})</span>
+      <span>{{startDate}} – {{endDate}}</span>
+    </div>
+    <div style="font-size: 12px;">{{institution}}</div>
+  </div>
+  {{/each}}
+
+</body>
+</html>

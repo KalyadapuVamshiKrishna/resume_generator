@@ -1,0 +1,127 @@
+{
+  "basics": {
+    "name": "Kalyadapu Vamshi Krishna",
+    "label": "Full Stack Developer",
+    "email": "curiuskkrish@gmail.com",
+    "phone": "+91 9441891066",
+    "url": "https://portfolio-website-eta-two-91.vercel.app/",
+    "location": {
+      "city": "Hyderabad",
+      "region": "Telangana",
+      "countryCode": "IN"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "KalyadapuVamshiKrishna",
+        "url": "https://github.com/KalyadapuVamshiKrishna"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "vamshi-krishna-kalyadapu",
+        "url": "https://www.linkedin.com/in/vamshi-krishna-kalyadapu/"
+      }
+    ]
+  },
+  
+  "summary": "Full-stack developer skilled in building end-to-end web applications with a strong foundation in the MERN stack. Experienced in designing scalable interfaces, developing modular backend architectures, and creating AI-augmented systems. Actively seeking internship opportunities to contribute to production-grade software.",
+  
+  "skills": [
+    {
+      "name": "Languages",
+      "keywords": ["JavaScript (ES6+)", "TypeScript", "Python", "C++", "HTML5/CSS3"]
+    },
+    {
+      "name": "Frontend & MERN",
+      "keywords": ["React.js", "Next.js", "Redux", "Tailwind CSS", "Chart.js", "Recharts"]
+    },
+    {
+      "name": "Backend & Database",
+      "keywords": ["Node.js", "Express.js", "MongoDB", "Mongoose", "REST APIs", "JWT Auth", "Supabase"]
+    },
+    {
+      "name": "Tools & DevOps",
+      "keywords": ["Git", "GitHub", "Vercel", "Playwright", "Postman", "Cloudinary", "Docker (Learning)"]
+    }
+  ],
+
+  "work": [],
+
+  "projects": [
+    {
+      "name": "Domio",
+      "description": "AI-enabled home rental platform inspired by real-world property booking systems.",
+      "url": "https://domio-client.vercel.app/",
+      "startDate": "2025-01",
+      "endDate": "2025-03",
+      "tech_stack": ["React", "Node.js", "Express", "MongoDB", "JWT", "Cloudinary"],
+      "highlights": [
+        "Architected a secure role-based dashboard for Hosts and Users using JWT authentication.",
+        "Implemented real-time booking workflows including cancellation and refund logic.",
+        "Integrated Cloudinary for optimized media handling, reducing page load times by 30%.",
+        "Designed modular backend controllers to handle complex CRUD operations for property listings."
+      ]
+    },
+    {
+      "name": "Kisan Sakhi",
+      "description": "AI-powered assistance platform for farmers providing weather and crop insights.",
+      "url": "https://kisan-sakhi.vercel.app/",
+      "startDate": "2025-10",
+      "endDate": "Present",
+      "tech_stack": ["React", "Tailwind CSS", "OpenWeather API", "AI Integration"],
+      "highlights": [
+        "Developed a mobile-first UI to assist rural users with low-bandwidth accessibility.",
+        "Integrated real-time weather forecasting and crop disease detection APIs.",
+        "Built a community module allowing farmers to share insights and discover government schemes."
+      ]
+    },
+    {
+      "name": "GitHub Profile Visualizer",
+      "description": "Interactive dashboard visualizing GitHub user activity and statistics.",
+      "url": "https://signalist-gamma.vercel.app/",
+      "startDate": "2025-08",
+      "endDate": "2025-09",
+      "tech_stack": ["React", "GitHub API", "Recharts"],
+      "highlights": [
+        "Engineered a dashboard to retrieve and visualize raw data from the GitHub Public API.",
+        "Created interactive charts for language usage and contribution activity using Recharts.",
+        "Implemented graceful error handling for API rate limits and empty data states."
+      ]
+    },
+    {
+      "name": "Adaptive Quiz System",
+      "description": "Adaptive difficulty quiz application based on user performance.",
+      "url": "https://adaptive-quiz-yfya.vercel.app/",
+      "startDate": "2025-06",
+      "endDate": "2025-07",
+      "tech_stack": ["React", "JavaScript", "State Management"],
+      "highlights": [
+        "Designed an algorithm to dynamically adjust question difficulty based on previous answers.",
+        "Built a performance analytics view to show users their progression curve.",
+        "Optimized state management to ensure zero lag during question transitions."
+      ]
+    }
+  ],
+
+  "education": [
+    {
+      "institution": "NxtWave Institute of Advanced Technologies",
+      "area": "Computer Science (B.Tech)",
+      "studyType": "Bachelor",
+      "startDate": "2024-01",
+      "endDate": "Present",
+      "score": "N/A"
+    }
+  ],
+
+  "meta": {
+    "note": "This section is for the AI Agent ONLY. Do not render in PDF.",
+    "target_roles": ["MERN Developer", "Full Stack Intern", "Frontend Engineer"],
+    "tone": "Technical, Action-Oriented, Concise",
+    "rules": {
+      "prioritize_projects": true,
+      "max_projects_on_resume": 3,
+      "rewrite_summary_based_on_jd": true
+    }
+  }
+}
